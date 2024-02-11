@@ -22,8 +22,6 @@ export default function OldSite() {
         <>
         <header> 
                 {buttonClicked > 1 || <p id="title">Ryan Greer's Website</p>}
-                {buttonClicked >= 1 && buttonClicked < 5 && <button onClick={handleClick} width="20" height="20" >Delete</button>} 
-                {/* {(isHovered || buttonClicked >= 1) && buttonClicked < 5 && <button onClick={handleClick} width="20" height="20" >Delete</button>}  */}
                 <div className="projects-title">
                     {buttonClicked > 2 || <h2 id="links">Links:</h2>}
                 </div>
@@ -36,9 +34,11 @@ export default function OldSite() {
                 </div>}
 
                 {buttonClicked >= 5 && <div>
-                    <h1>Well done...</h1>
+                    <h1>Great Work</h1>
                     <h3>It's All Gone</h3>
+                    <h5>Refresh the page to see the content again</h5>
                 </div>}
+                {buttonClicked >= 1 && buttonClicked < 5 && <button onClick={handleClick} width="20" height="20" >Delete</button>} 
         </header>
         <DestructSite isHovered={isHovered} buttonClicked={buttonClicked} handleMouseOver={handleMouseOver} handleMouseOut={handleMouseOut} handleClick={handleClick} />
         </>

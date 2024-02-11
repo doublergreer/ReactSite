@@ -95,3 +95,7 @@ p {
   /* border: 2px solid rgb(116, 116, 116); Set border around the box */
   /* background-color: #f9f9f9; Set background color */
 }
+
+#title {
+  font-weight:500;
+}
